@@ -21,16 +21,34 @@ export default function ThumbnailGeneratorPage() {
 
                 {/* 앱에 대한 상세 설명 */}
                 <p className={styles.description} style={{ maxWidth: '800px', marginTop: '1rem' }}>
-                    macOS에서 특정 이미지 파일(jpg, png, WebP 등)의 미리보기가 생성되지 않아 <br/> 불편하셨나요? <br/><br/>
-                    저도 불편했습니다!! <br/><br/> 그래서 만들었습니다 "Thumbnail Generator"<br/>
+                    macOS에서 특정 이미지 파일(jpg, png, WebP 등)의 미리보기가 생성되지 않아 <br /> 불편하셨나요? <br /><br />
+                    저도 불편했습니다!! <br /><br /> 그래서 만들었습니다 "Thumbnail Generator"<br />
                     Thumbnail Generator는 간단한 드래그 앤 드롭만으로 보이지 않던 썸네일을 즉시 생성해주는 가벼운
                     유틸리티 앱입니다.
                 </p>
 
+                {/* 앱 사용 예시 동영상 (이 부분이 수정되었습니다) */}
+                <div style={{ marginTop: '3rem', maxWidth: '800px', width: '100%', padding: '0 1rem' }}>
+                    <video
+                        src="/img/thumbnail-generator-demo.mov"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={{
+                            width: '100%',
+                            borderRadius: '18px',
+                            boxShadow: '0 8px 20px rgba(0,0,0,0.1)'
+                        }}
+                    >
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
                 {/* 주요 기능 섹션 */}
                 <div style={{ textAlign: 'left', marginTop: '3rem', maxWidth: '600px' }}>
                     <h2 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>주요 기능</h2>
-                    <ul style={{ fontSize: '1.5rem', color: "rgb(47, 110, 235)" }}>
+                    <ul style={{ fontSize: '1.5rem', color: "rgb(47, 110, 235)", lineHeight: '1.8' }}>
                         <li>간단하고 직관적인 드래그 앤 드롭 인터페이스</li>
                         <li>jpg, png, WebP 등 다양한 포맷 지원</li>
                         <li>원본 파일을 수정하지 않고 안전하게 썸네일만 추가</li>
