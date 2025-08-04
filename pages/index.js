@@ -7,7 +7,7 @@ const apps = [
         name: 'Thumbnail Generator',
         description: '썸네일이 생성되지 않는 사진파일 썸네일 생성하기',
         icon: <img src='/img/thumbnailgenerator.png' height="80" alt="Thumbnail Generator" />,
-        downloadUrl: '#',
+        downloadUrl: 'https://github.com/sejin811/Mac_Thumbnail_GeneratorApp/releases/download/untagged-d7aa58e948e8d9795f45/ThumbnailApp.dmg',
         pageUrl: '/thumbnail-generator', // 상세 페이지로 이동할 URL
     },
     {
@@ -81,7 +81,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Powered by You
+                    ⓒ 2025 Maclify. All rights reserved.
                 </a>
             </footer>
         </div>

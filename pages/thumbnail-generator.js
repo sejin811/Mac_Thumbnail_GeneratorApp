@@ -27,7 +27,7 @@ export default function ThumbnailGeneratorPage() {
                     유틸리티 앱입니다.
                 </p>
 
-                {/* 앱 사용 예시 동영상 (이 부분이 수정되었습니다) */}
+                {/* 앱 사용 예시 동영상 */}
                 <div style={{ marginTop: '3rem', maxWidth: '800px', width: '100%', padding: '0 1rem' }}>
                     <video
                         src="/img/thumbnail-generator-demo.mov"
@@ -53,12 +53,39 @@ export default function ThumbnailGeneratorPage() {
                         <li>jpg, png, WebP 등 다양한 포맷 지원</li>
                         <li>원본 파일을 수정하지 않고 안전하게 썸네일만 추가</li>
                         <li>가볍고 빠른 네이티브 앱</li>
-                        <li><del>이렇게나 좋은데 다운로드 안한다고?</del></li>
+                        <li><del>공짜라는게 진짜 최고인</del></li>
                     </ul>
                 </div>
 
+                {/* 최초 실행 가이드 섹션 */}
+                <div style={{
+                    marginTop: '4rem', maxWidth: '800px', width: '100%', padding: '0 1rem', borderTop: '1px solid #eaeaea', paddingTop: '3rem'
+                }}>,
+                    <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>최초 실행 시 권한 설정 방법</h2>
+                    <p className={styles.description} style={{ fontSize: '1.1rem' }}>
+                        앱을 처음 실행할 때 '확인되지 않은 개발자'라는 경고가 표시될 수 있습니다. <br />
+                        아래 영상에 따라 '시스템 설정'에서 앱을 허용해주세요.<br />
+                        <del>악성코드 없습니다 :(</del>
+                    </p>
+                    <video
+                        src="/img/permission-guide.mov" // 권한 설정 안내 영상 파일 경로
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={{
+                            width: '100%',
+                            borderRadius: '18px',
+                            boxShadow: '0 8px 20px rgba(0,0,0,0.1)',
+                            marginTop: '2rem'
+                        }}
+                    >
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
                 {/* 다운로드 버튼 */}
-                <a href="#" className={styles.downloadButton} style={{ marginTop: '3rem', transform: 'scale(1.2)' }}>
+                <a href="https://github.com/sejin811/Mac_Thumbnail_GeneratorApp/releases/download/untagged-d7aa58e948e8d9795f45/ThumbnailApp.dmg" className={styles.downloadButton} style={{ marginTop: '3rem', transform: 'scale(1.2)' }}>
                     Download Now (v1.0)
                 </a>
 
@@ -68,13 +95,13 @@ export default function ThumbnailGeneratorPage() {
                         &larr; Back to Home
                     </Link>
                 </div>
-            </main>
+            </main >
 
             <footer className={styles.footer}>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                    Powered by You
+                    ⓒ 2025 Maclify. All rights reserved.
                 </a>
             </footer>
-        </div>
+        </div >
     );
 }
