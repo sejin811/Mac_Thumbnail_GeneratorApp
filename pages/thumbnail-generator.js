@@ -7,8 +7,8 @@ export default function ThumbnailGeneratorPage() {
         <div className={styles.container}>
             <Head>
                 <title>Maclify - Thumbnail Generator</title>
-                <meta name="description" content="Generate thumbnails for image files that don't show previews on
-      macOS." />
+                <meta name="description" content="macOS에서 jpg, png, WebP 등 미리보기가 안 보이는 이미지 파일의 썸네일을
+                생성해주는 가벼운 무료 유틸리티 앱입니다. 드래그 앤 드롭으로 쉽게 사용하세요." />
                 <link rel="icon" href="/img/maclify-favicon.png" type="image/png" />
             </Head>
 
