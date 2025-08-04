@@ -60,7 +60,7 @@ export default function ThumbnailGeneratorPage() {
                 {/* 최초 실행 가이드 섹션 */}
                 <div style={{
                     marginTop: '4rem', maxWidth: '800px', width: '100%', padding: '0 1rem', borderTop: '1px solid #eaeaea', paddingTop: '3rem'
-                }}>,
+                }}>
                     <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>최초 실행 시 권한 설정 방법</h2>
                     <p className={styles.description} style={{ fontSize: '1.1rem' }}>
                         앱을 처음 실행할 때 '확인되지 않은 개발자'라는 경고가 표시될 수 있습니다. <br />
