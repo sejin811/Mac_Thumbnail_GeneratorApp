@@ -40,7 +40,7 @@ const apps = [
 ];
 
 export default function Home() {
-    const siteUrl = ""
+    const siteUrl = "https://maclify.site"
     const title = "Home Page"
     const description = "맥 환경을 더욱 간편하게 만들어 보세요. 개똥 같은 맥을 기똥차게 만들어 줄겁니다."
     return (
